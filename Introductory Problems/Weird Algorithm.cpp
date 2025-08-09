@@ -1,11 +1,11 @@
 #include <bits/stdc++.h>
-
+ 
 using namespace std;
-
-vector<int> weird_algorithm(int n){
-    vector<int>a;
+ 
+vector<long long int> weird_algorithm(long long int n){
+    vector<long long int>a;
     a.push_back(n);
-    while(n>1){
+    while(n!=1){
         if(n%2!=0){
             n=(n*3)+1;
         }
@@ -19,18 +19,20 @@ vector<int> weird_algorithm(int n){
     
     return a;
 }
-
+ 
 int main()
 {
  
-    int n;
+    long long int n;
     cin>>n;
     
-    vector<int>a;
+    vector<long long int>a;
     
     a=weird_algorithm(n);
-    
-    for(auto i=0;i<a.size();i++){
+   
+    long long int siz=a.size();  
+  
+    for(auto i=0;i<siz;i++){
         cout<<a[i]<<" ";
     }
     
