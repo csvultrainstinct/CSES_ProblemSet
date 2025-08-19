@@ -12,6 +12,7 @@ ll IncreasingArray(ll n, vector<ll> &a){
         if(a[i]>a[i+1]){
             
             ans+=abs(a[i]-a[i+1]);
+            a[i+1]=a[i];
         }
     }
     
